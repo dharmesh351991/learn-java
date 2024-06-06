@@ -28,18 +28,10 @@ public class Solution {
             }
             used[i] = true;
             currentPermutation.append(arr[i]);
-            System.out.println("======Before================");
-            System.out.println("used[i] : " + used[i] + " Where i Is "+ i);
-            System.out.println("currentPermutation : " + currentPermutation);
-            System.out.println("results : " + results);
             permuteHelper(arr, used, currentPermutation, results);
             // Backtrack
             used[i] = false;
             currentPermutation.deleteCharAt(currentPermutation.length() - 1);
-            System.out.println("======After================");
-            System.out.println("used[i] : " + used[i] + " Where i Is "+ i);
-            System.out.println("currentPermutation : " + currentPermutation);
-            System.out.println("results : " + results);
         }
     }
 
