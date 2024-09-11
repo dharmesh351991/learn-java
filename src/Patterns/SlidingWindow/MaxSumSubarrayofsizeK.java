@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.SlidingWindow;
 import java.util.ArrayList;
 
 public class MaxSumSubarrayofsizeK {
@@ -15,7 +15,7 @@ public class MaxSumSubarrayofsizeK {
         System.out.println("Maximum sum of subarray of size " + K + " is: " + result);
     }
     public static long maximumSumSubarray(int K, ArrayList<Integer> Arr,int N){
-        long maxSum = Integer.MIN_VALUE; //intialize max sum
+        long maxSum = Long.MIN_VALUE;
         long currentSum = 0; //initialize current sum to 0
         //find sum of window size k
         for(int i=0; i<K; i++){

@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.SlidingWindow;
 import java.util.HashMap;
 public class LengthOfLongestSubstring {
     public static int longestNonRepeatingSubstring(String s) {
