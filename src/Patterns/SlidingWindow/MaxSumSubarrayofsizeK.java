@@ -21,7 +21,7 @@ public class MaxSumSubarrayofsizeK {
         for(int i=0; i<K; i++){
             currentSum += Arr.get(i);
         }
-        //Set the maxSum value as currentsum for intial window size
+        //Set the maxSum value as current for initial window size
         maxSum = currentSum;
         //start Slide to calculate from window size to array length
         for(int i = K; i < N; i++){

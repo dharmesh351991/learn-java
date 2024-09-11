@@ -3,7 +3,7 @@ import java.util.HashMap;
 public class LengthOfLongestSubstring {
     public static int longestNonRepeatingSubstring(String s) {
         int n = s.length();
-        //HashMap for storing charcter occurances
+        //HashMap for storing character occurrences
         HashMap<Character, Integer> map = new HashMap<>();
         int maxLength = 0;
         int start = 0;
