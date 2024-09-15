@@ -1,12 +1,12 @@
 package DSA;
 
-public class maxSubarrayKadane {
+public class maxSumSubarrayKadane {
     public static void main(String[] args) {
         int nums[] = { -2,1,-3,4,-1,2,1,-5,4 };
-        int maxSum = maxSubarrayKadane(nums);
+        int maxSum = maxSumKadan(nums);
         System.out.println("Your maximum sum of Subarray is : "+ maxSum);
     }
-    static int maxSubarrayKadane(int nums[]) {
+    static int maxSumKadan(int nums[]) {
         int maxSum = Integer.MIN_VALUE;
         int currentSum = 0;
         for( int i = 0; i < nums.length; i++ ){
